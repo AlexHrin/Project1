@@ -44,7 +44,7 @@ html,
 body {
    height: 100%;
    line-height: 1;
-   font-family: "Roboto";
+   font-family: "Rubik";
 }
 
 body._lock {
@@ -61,27 +61,21 @@ body._lock {
 
 // Огранічующий контейнер, всюди ставити
 ._container {
-   max-width: 1240px;
+   max-width: 1140px;
    padding: 0 20px;
    margin: 0px auto; //вистраює любий блочний блок по середині, якщо він ограничений по ширині
 }
 
 ._btn {
+   text-transform: uppercase;
    cursor: pointer;
    display: inline-flex;
-   justify-content: center;
    align-items: center;
-   background: $red;
-   color: #fff;
-   font-weight: 700;
-   transition: all 0.3s ease 0s;
-   text-transform: uppercase;
-   letter-spacing: 0.2em;
-   border-radius: 6px;
+   background-color: $red;
+   color: #fcfdfe;
    border: 2px solid $red;
-
    &:hover {
-      background: #fff;
+      background: #fcfdfe;
       color: $red;
    }
 }
