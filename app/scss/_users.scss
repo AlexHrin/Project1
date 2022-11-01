@@ -1,0 +1,110 @@
+.users {
+   background: #fafbfd;
+   margin: 110px 0px 0px 0px;
+   &__container {
+      display: flex;
+      justify-content: center;
+   }
+   &__statistics {
+      align-items: center;
+      width: 654px;
+      height: 117px;
+      display: flex;
+      justify-content: space-around;
+      background: #ffffff;
+      box-shadow: 0px 2px 24px rgba(88, 126, 236, 0.15);
+      border-radius: 16px;
+   }
+   // .users__container
+
+   // .users__amount
+
+   &__amount {
+   }
+
+   // .users__countries
+
+   &__countries {
+   }
+
+   // .users__experts
+
+   &__experts {
+   }
+}
+
+.amount-users {
+   // .amount-users__tittle
+
+   &__tittle {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 43px;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.14em;
+      color: $red;
+   }
+
+   // .amount-users__text
+
+   &__text {
+      font-weight: 700;
+      font-size: 11px;
+      line-height: 13px;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.37em;
+      text-transform: uppercase;
+   }
+}
+.countries-users {
+   // .countries-users__tittle
+
+   &__tittle {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 43px;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.14em;
+      color: $red;
+   }
+
+   // .countries-users__text
+
+   &__text {
+      font-weight: 700;
+      font-size: 11px;
+      line-height: 13px;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.37em;
+      text-transform: uppercase;
+   }
+}
+.experts-users {
+   // .experts-users__tittle
+
+   &__tittle {
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 43px;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.14em;
+      color: $red;
+   }
+
+   // .experts-users__text
+
+   &__text {
+      font-weight: 700;
+      font-size: 11px;
+      line-height: 13px;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.37em;
+      text-transform: uppercase;
+   }
+}
