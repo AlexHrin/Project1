@@ -2,6 +2,10 @@
    margin: 100px 0px 0px 0px;
    // .health__info
 
+   &__container {
+      display: flex;
+      justify-content: space-between;
+   }
    &__info {
    }
 
@@ -10,13 +14,11 @@
    &__image {
    }
 }
-.container {
-   display: flex;
-   justify-content: space-between;
-   margin: 0px 0px 0px 70px;
-}
+
+
 
 .info-health {
+   margin: 0px 0px 0px 60px;
 }
 .info-health {
    max-width: 400px;

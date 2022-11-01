@@ -60,6 +60,7 @@ body._lock {
 }
 
 ._container {
+  max-width: 1140px;
   padding: 0 20px;
   margin: 0px auto;
 }
@@ -123,10 +124,12 @@ body._lock {
 .health {
   margin: 100px 0px 0px 0px;
 }
-.container {
+.health__container {
   display: flex;
   justify-content: space-between;
-  margin: 0px 0px 0px 70px;
+}
+.info-health {
+  margin: 0px 0px 0px 60px;
 }
 
 .info-health {
