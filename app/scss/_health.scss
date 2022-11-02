@@ -1,26 +1,25 @@
 .health {
    background: #fafbfd;
-   padding: 120px 0px 0px 0px;
+   padding: 120px 0px 0px 0px; // із за кольору
    // .health__info
 
    &__container {
       display: flex;
-      justify-content: space-between;
    }
    &__info {
+      max-width: 400px;
    }
 
    // .health__image
 
    &__image {
    }
+   //flex: 1 1 50%;
 }
 
 .info-health {
    margin: 0px 0px 0px 60px;
-}
-.info-health {
-   max-width: 400px;
+   //flex: 1 1 50%;
 
    // .info-health__title
 

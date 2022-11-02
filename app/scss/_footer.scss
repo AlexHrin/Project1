@@ -1,0 +1,29 @@
+.footer {
+   margin: 80px 0px 0px 0px;
+   // .footer__container
+
+   &__container {
+   }
+
+   // .footer__app
+
+   &__app {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+   }
+
+   // .footer__google
+
+   &__google {
+   }
+
+   // .footer__appstore
+
+   &__appstore {
+   }
+   &__img1 {
+   }
+   &__img2 {
+   }
+}

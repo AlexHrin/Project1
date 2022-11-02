@@ -1,0 +1,88 @@
+.healthcare {
+   // .healthcare__container
+
+   &__container {
+   }
+
+   // .healthcare__info
+
+   &__info {
+      text-align: center;
+   }
+
+   // .healthcare__cards
+
+   &__cards {
+      display: flex;
+      //justify-content: space-around;
+   }
+
+   // .healthcare__card
+
+   &__card {
+      background: #ffffff;
+      box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+      border-radius: 8px;
+   }
+}
+
+.info-healthcare {
+   // .info-healthcare__title
+
+   &__title {
+      font-weight: 700;
+      font-size: 44px;
+      line-height: 126%;
+      margin: 0px 0px 20px 0px;
+   }
+
+   // .info-healthcare__text
+
+   &__text {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 138.5%;
+      /* or 17px */
+      letter-spacing: 0.08em;
+      color: #616161;
+      margin: 0px 0px 20px 0px;
+   }
+}
+.health {
+   // .health__red
+
+   &__red {
+      color: $red;
+   }
+}
+.card-healthcare {
+   // .card-healthcare__image
+
+   &__image {
+      text-align: center;
+      margin: 0px 0px 50px 0px;
+   }
+
+   // .card-healthcare__title
+
+   &__title {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 138.5%;
+      /* or 22px */
+      text-align: center;
+      letter-spacing: 0.08em;
+   }
+
+   // .card-healthcare__text
+
+   &__text {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 138.5%;
+      /* or 17px */
+
+      text-align: center;
+      letter-spacing: 0.08em;
+   }
+}

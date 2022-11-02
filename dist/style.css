@@ -81,31 +81,27 @@ body._lock {
 
 .header {
   background: #fafbfd;
-  padding: 30px 0px 0px 0px;
 }
 .header__container {
+  height: 110px;
+  width: 100%;
   display: flex;
   align-items: center;
-  text-transform: uppercase;
+  justify-content: space-between;
 }
 .header__logo {
-  margin: 0px 285px 0px 40px;
+  display: flex;
+  justify-content: center;
 }
 .header__menu {
-  margin: 0px 160px 0px 0px;
-}
-.menu__list {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-}
-.menu__link {
   font-weight: 700;
   font-size: 10px;
   line-height: 12px;
-  letter-spacing: 1px;
+  /* identical to box height */
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
 }
-.menu__button {
+.header .button__header {
   font-weight: 800;
   font-size: 10px;
   line-height: 12px;
@@ -117,25 +113,31 @@ body._lock {
   height: 40px;
   border: 2px solid #4285f4;
 }
-.menu__button:hover {
+.header .button__header:hover {
   background: #fcfdfe;
   color: #4285f4;
 }
 
+.menu__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.menu__item {
+  margin: 0 20px;
+}
 .health {
   background: #fafbfd;
   padding: 120px 0px 0px 0px;
 }
 .health__container {
   display: flex;
-  justify-content: space-between;
+}
+.health__info {
+  max-width: 400px;
 }
 .info-health {
   margin: 0px 0px 0px 60px;
-}
-
-.info-health {
-  max-width: 400px;
 }
 .info-health__title {
   font-weight: 700;
@@ -198,6 +200,7 @@ body._lock {
   display: flex;
   gap: 180px;
   align-items: center;
+  justify-content: center;
 }
 .features__image {
   margin: 0px 0px 0px 110px;
@@ -307,4 +310,112 @@ body._lock {
   text-align: center;
   letter-spacing: 0.37em;
   text-transform: uppercase;
+}
+
+.talk {
+  padding: 120px 0px 0px 0px;
+}
+.talk__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.talk__info {
+  margin: 0px 95px 0px 0px;
+}
+.health__blue {
+  color: #4285f4;
+}
+
+.info-talk {
+  max-width: 365px;
+}
+.info-talk__title {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 126%;
+  margin: 0px 0px 20px 0px;
+}
+.info-talk__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 138.5%;
+  /* or 17px */
+  letter-spacing: 0.08em;
+  color: #616161;
+  margin: 0px 0px 20px 0px;
+}
+.info-talk__button {
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 12px;
+  /* identical to box height */
+  letter-spacing: 0.14em;
+  padding: 20px 30px;
+  max-width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  margin: 0px 0px 120px 0px;
+}
+
+.healthcare__info {
+  text-align: center;
+}
+.healthcare__cards {
+  display: flex;
+}
+.healthcare__card {
+  background: #ffffff;
+  box-shadow: 0px 4px 18px rgba(88, 126, 236, 0.18);
+  border-radius: 8px;
+}
+
+.info-healthcare__title {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 126%;
+  margin: 0px 0px 20px 0px;
+}
+.info-healthcare__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 138.5%;
+  /* or 17px */
+  letter-spacing: 0.08em;
+  color: #616161;
+  margin: 0px 0px 20px 0px;
+}
+
+.health__red {
+  color: #ec5863;
+}
+
+.card-healthcare__image {
+  text-align: center;
+  margin: 0px 0px 50px 0px;
+}
+.card-healthcare__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 138.5%;
+  /* or 22px */
+  text-align: center;
+  letter-spacing: 0.08em;
+}
+.card-healthcare__text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 138.5%;
+  /* or 17px */
+  text-align: center;
+  letter-spacing: 0.08em;
+}
+
+.footer {
+  margin: 80px 0px 0px 0px;
+}
+.footer__app {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
 }
