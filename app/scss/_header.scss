@@ -1,11 +1,18 @@
 .header {
-   background: #fafbfd;
+   display: flex;
+   align-items: center;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 2;
+   background: #FAFBFD;
 
    // .header__container
 
    &__container {
-      height: 110px;
-      width: 100%; // зачем?
+      height: 93px;
+      width: 100%;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -14,24 +21,73 @@
    // .header__logo
 
    &__logo {
-      display: flex; // зачем?
-      justify-content: center; // зачем?
+      display: flex;
+      justify-content: center;
    }
 
    // .header__menu
 
    &__menu {
-      font-weight: 700;
-      font-size: 10px;
-      line-height: 12px;
-      /* identical to box height */
-
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
    }
 
    // .header__button
-   .button__header {
+
+   &__button {
+
+   }
+}
+
+.menu {
+
+   // .menu__icon
+
+   &__icon {
+   }
+
+   // .menu__body
+
+   &__body {
+      font-weight: 700;
+      font-size: 10px;
+      line-height: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+
+
+   }
+
+   // .menu__list
+
+   &__list {      
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+   }
+
+   // .menu__item
+
+   &__item {
+      text-align: center;
+margin: 0px 30px 0px 0px;
+
+   }
+
+   // .menu__link
+
+   &__link {
+      padding-left: 10px;
+      color: black;
+      &:hover {
+         color: $red;
+      }
+   }
+}
+
+.button-header {
+
+   // .button-header__btn
+
+   &__btn {
       font-weight: 800;
       font-size: 10px;
       line-height: 12px;
@@ -45,35 +101,6 @@
       &:hover {
          background: #fcfdfe;
          color: #4285f4;
-      }
    }
 }
-
-// ._btn
-
-.logo {
-   // .logo__img
-
-   &__img {
-   }
-}
-.menu {
-   // .menu__list
-
-   &__list {
-      display: flex;
-      align-items: center;
-      justify-content: space-evenly;
-   }
-
-   // .menu__item
-
-   &__item {
-      margin: 0 20px; // зачем?
-   }
-
-   // .menu__link
-
-   &__link {
-   }
 }

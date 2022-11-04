@@ -80,10 +80,17 @@ body._lock {
 }
 
 .header {
-  background: #fafbfd;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  background: #FAFBFD;
 }
 .header__container {
-  height: 110px;
+  height: 93px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -93,15 +100,31 @@ body._lock {
   display: flex;
   justify-content: center;
 }
-.header__menu {
+.menu__body {
   font-weight: 700;
   font-size: 10px;
   line-height: 12px;
-  /* identical to box height */
   letter-spacing: 0.14em;
   text-transform: uppercase;
 }
-.header .button__header {
+.menu__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.menu__item {
+  text-align: center;
+  margin: 0px 30px 0px 0px;
+}
+.menu__link {
+  padding-left: 10px;
+  color: black;
+}
+.menu__link:hover {
+  color: #ec5863;
+}
+
+.button-header__btn {
   font-weight: 800;
   font-size: 10px;
   line-height: 12px;
@@ -113,31 +136,21 @@ body._lock {
   height: 40px;
   border: 2px solid #4285f4;
 }
-.header .button__header:hover {
+.button-header__btn:hover {
   background: #fcfdfe;
   color: #4285f4;
 }
 
-.menu__list {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-}
-.menu__item {
-  margin: 0 20px;
-}
 .health {
-  background: #fafbfd;
-  padding: 120px 0px 0px 0px;
+  margin: 120px 0px 60px 0px;
 }
 .health__container {
   display: flex;
+  align-items: center;
 }
 .health__info {
-  max-width: 400px;
-}
-.info-health {
-  margin: 0px 0px 0px 60px;
+  flex: 1 1 50%;
+  max-width: 450px;
 }
 .info-health__title {
   font-weight: 700;
@@ -145,53 +158,31 @@ body._lock {
   line-height: 126%;
   margin: 0px 0px 20px 0px;
 }
-.info-health .health__blue {
-  color: #4285f4;
-}
 .info-health__text {
   font-weight: 400;
   font-size: 12px;
   line-height: 138.5%;
-  /* or 17px */
-  letter-spacing: 0.08em;
+  margin: 0px 0px 30px 0px;
   color: #616161;
-  margin: 0px 0px 20px 0px;
 }
 .info-health__button {
   font-weight: 800;
   font-size: 10px;
   line-height: 12px;
-  /* identical to box height */
-  letter-spacing: 0.14em;
+  letter-spacing: 1px;
+  background-color: #ec5863;
+  border-radius: 5px;
   padding: 20px 30px;
   max-width: 150px;
   height: 40px;
-  border-radius: 5px;
-  margin: 0px 0px 120px 0px;
+  border: 2px solid #ec5863;
+}
+.info-health__button:hover {
+  background: #fcfdfe;
+  color: #ec5863;
 }
 .play-menu {
   display: flex;
-  align-items: center;
-}
-.play-menu__start {
-  margin: 0px 10px 0px 0px;
-}
-.play-menu .play-menu__title {
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 126%;
-  /* or 16px */
-  letter-spacing: 0.08em;
-  color: #b0b0b0;
-  margin: 0px 0px 5px 0px;
-}
-.play-menu .play-menu__text {
-  font-weight: 400;
-  font-size: 9px;
-  line-height: 126%;
-  /* or 11px */
-  letter-spacing: 0.165em;
-  text-transform: uppercase;
 }
 .features {
   margin: 60px 0px 0px 0px;
@@ -358,6 +349,9 @@ body._lock {
   margin: 0px 0px 120px 0px;
 }
 
+.healthcare {
+  margin: 100px 0px 0px 0px;
+}
 .healthcare__info {
   text-align: center;
 }

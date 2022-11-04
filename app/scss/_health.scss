@@ -1,49 +1,50 @@
 .health {
-   background: #fafbfd;
-   padding: 120px 0px 0px 0px; // із за кольору
-   // .health__info
+   margin: 120px 0px 60px 0px;
+
+   // .health__container
 
    &__container {
       display: flex;
+      align-items: center;
    }
+
+   // .health__info
+
    &__info {
-      max-width: 400px;
+      flex: 1 1 50%;
+      max-width: 450px;
+   }
+
+   // .health__blue
+
+   &__blue {
    }
 
    // .health__image
 
    &__image {
    }
-   //flex: 1 1 50%;
 }
 
 .info-health {
-   margin: 0px 0px 0px 60px;
-   //flex: 1 1 50%;
 
    // .info-health__title
 
    &__title {
-      font-weight: 700;
-      font-size: 44px;
-      line-height: 126%;
-      margin: 0px 0px 20px 0px;
-   }
-
-   .health__blue {
-      color: #4285f4;
+   font-weight: 700;
+   font-size: 44px;
+   line-height: 126%;
+   margin: 0px 0px 20px 0px;
    }
 
    // .info-health__text
 
    &__text {
-      font-weight: 400;
-      font-size: 12px;
-      line-height: 138.5%;
-      /* or 17px */
-      letter-spacing: 0.08em;
-      color: #616161;
-      margin: 0px 0px 20px 0px;
+   font-weight: 400;
+   font-size: 12px;
+   line-height: 138.5%;
+   margin: 0px 0px 30px 0px;
+   color: #616161;
    }
 
    // .info-health__button
@@ -52,64 +53,55 @@
       font-weight: 800;
       font-size: 10px;
       line-height: 12px;
-      /* identical to box height */
-      letter-spacing: 0.14em;
+      letter-spacing: 1px;
+      background-color: $red;
+      border-radius: 5px;
       padding: 20px 30px;
       max-width: 150px;
       height: 40px;
-      border-radius: 5px;
-      margin: 0px 0px 120px 0px;
+      border: 2px solid $red;
+      &:hover {
+         background: #fcfdfe;
+         color: $red;
+   }
    }
 
    // .info-health__play
 
    &__play {
+
    }
 }
-.play-menu {
+.play-menu {      
    display: flex;
-   align-items: center;
+
+
    // .play-menu__start
 
    &__start {
-      margin: 0px 10px 0px 0px;
    }
 
-   // .play-menu__title
-   .play-menu {
-      // .play-menu__info
+   // .play-menu__info
 
-      &__info {
-      }
+   &__info {
+   }
+}
+.start {
 
-      // .play-menu__title
+   // .start__icon
 
-      &__title {
-         font-weight: 400;
-         font-size: 13px;
-         line-height: 126%;
-         /* or 16px */
-         letter-spacing: 0.08em;
-         color: #b0b0b0;
-         margin: 0px 0px 5px 0px;
-      }
+   &__icon {
+   }
+}
+.info-play-menu {
 
-      // .play-menu__text
+   // .info-play-menu__title
 
-      &__text {
-         font-weight: 400;
-         font-size: 9px;
-         line-height: 126%;
-         /* or 11px */
-         letter-spacing: 0.165em;
-         text-transform: uppercase;
-      }
+   &__title {
    }
 
-   .start {
-      // .start__icon
+   // .info-play-menu__text
 
-      &__icon {
-      }
+   &__text {
    }
 }
